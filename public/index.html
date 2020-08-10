@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="recipe.css" />
+</head>
+<body>
+    <div class="recipe-app">
+        <button class="login" type="button">Login</button>
+        <button class="logout" type="button">Logout</button>
+        <button class="home" type="home">Return To Home Page</button>
+        <div id="homePage">
+            <div class="main">
+                <h2 class="heading">Welcome to Home Food Recipes</h2>
+                <div class="recipeList"><h3>All Recipes</h3><ul class="recipe-list"></ul></div>
+                <button class="add-btn" type="button">Add New Recipe</button>
+            </div>
+        </div>
+    </div>
+    <div id="loginPage">
+            <div class="login-panel">
+                <h1 class="login-header">Please login:</h1>
+                <input class="username" name="text" type="username" placeholder="Enter Username" />
+                <button class="login-user" type="button">Login</button>
+                <div class="status"></div>
+            </div>
+    </div>
+        <div id="descriptionPage">
+            <div class="title">Recipe Details</div>
+            <ul class="description"></ul>
+        </div>
+        <div id="newRecipe" class="outgoing">
+           <div class="recipe-title">ADD NEW RECIPE </div>
+           <div>Enter Title:<input class="name" name="Title" type="title" /></div>
+           <div>Ingredients:<textarea class="ingredients" name="Ingredients"> </textarea></div>
+           <div>Instructions:<textarea class="instructions" name="Instructions"> </textarea></div>
+           <div><button class="add-recipe-btn" type="button">Submit New Recipe</button></div>
+           <div class="status"></div>
+        </div>
+    </div>
+    <script src="recipe.js"></script>
+</body>
+</html>
